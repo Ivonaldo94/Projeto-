@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Criar Missão</title>
+</head>
+<body>
+    <h1>Criar Nova Missão</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        {{ form.name.label }} {{ form.name() }}<br>
+        {{ form.launch_date.label }} {{ form.launch_date() }}<br>
+        {{ form.destination.label }} {{ form.destination() }}<br>
+        {{ form.state.label }} {{ form.state() }}<br>
+        {{ form.crew.label }} {{ form.crew() }}<br>
+        {{ form.payload.label }} {{ form.payload() }}<br>
+        {{ form.duration.label }} {{ form.duration() }}<br>
+        {{ form.cost.label }} {{ form.cost() }}<br>
+        {{ form.status.label }} {{ form.status() }}<br>
+        {{ form.submit() }}
+    </form>
+</body>
+</html>

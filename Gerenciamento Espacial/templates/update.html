@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Atualizar Missão</title>
+</head>
+<body>
+    <h1>Atualizar Missão</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        {{ form.name.label }} {{ form.name() }}<br>
+        {{ form.destination.label }} {{ form.destination() }}<br>
+        {{ form.crew.label }} {{ form.crew() }}<br>
+        {{ form.payload.label }} {{ form.payload() }}<br>
+        {{ form.submit() }}
+    </form>
+</body>
+</html>
